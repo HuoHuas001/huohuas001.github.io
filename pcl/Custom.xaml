@@ -6,11 +6,11 @@
 <local:MyCard Title="LiuLangCraft公告" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                   Text="LiuLangCraft即将启用统一通行证，请及时更新启动器配置文件" />
+                   Text="LiuLangCraft即将启用统一通行证" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#8C7721"
-                   Text="你可以通过添加、删除属性修改样式，例如上面的 Foreground 会修改字体颜色。" />
-        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" FontSize="11"
-                   Text="它还有许多可以调整的属性：Margin 调整边距，FontSize 调整字号，TextWrapping 则是启用自动换行。" />
+                   Text="请及时更新启动器配置文件，我们将在QQ群内发布配置文件" />
+        <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="加入QQ群" EventType="打开网页" EventData="https://jq.qq.com/?_wv=1027&k=9aLwTZQM" />
     </StackPanel>
 </local:MyCard>
 
