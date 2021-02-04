@@ -10,7 +10,7 @@
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#8C7721"
                    Text="请及时更新启动器配置文件，我们将在QQ群内发布配置文件" />
         <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                   Text="加入QQ群" EventType="打开网页" EventData="https://jq.qq.com/?_wv=1027&k=9aLwTZQM" />
+                   Text="加入QQ群" EventType="打开网页" EventData="http://file.txssb.cn/pcl/qqgroup" />
     </StackPanel>
 </local:MyCard>
 
