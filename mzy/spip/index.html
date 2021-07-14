@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>梦知夜の赞助通道</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+            integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+            integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            img{
+                width:330px;
+                height: 450px;
+                display: none;
+            }
+            body img{
+                height: 450px;
+                width: 330px;
+                text-align: center; 
+                /*line-height: 200px;文字水平居中*/
+                margin-left:auto;/*div水平居中*/
+                margin-right: auto;
+            }
+            .title{
+                text-align: center; 
+                line-height: 200px;/*文字水平居中*/
+                margin:auto;/*div水平居中*/
+            }
+            #zfb,#wx,#link{
+                height: 30px;
+                width:60px;
+                border-radius: 10px;
+                background-color: white;
+                margin-left:auto;/*div水平居中*/
+                margin-right: auto;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="mdui-appbar mdui-appbar-fixed">
+			<div class="mdui-toolbar mdui-color-blue-a400">
+				<a href="javascript:;" class="mdui-typo-headline">梦知夜服务器赞助通道</a>
+		</header>
+        <div class="mdui-color-theme-a200">
+			<h1 class="title mdui-text-color-black-text">欢迎赞助我们梦知夜服务器awa</h1>
+
+        </div>
+        <div class="image">
+            <img src="https://z3.ax1x.com/2021/07/14/We3711.jpg" id="zfbi">
+            <img src="https://z3.ax1x.com/2021/07/14/We3zhd.jpg" id="wxi">
+        </div>
+        <button id="zfb" class="mdui-btn-block mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-a400" style="width: 250px;height: 50px;margin: auto;margin-top: 10px;">支付宝</button>
+        <button id="wx" class="mdui-btn-block mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-a400" style="width: 250px;height: 50px;margin: auto;margin-top: 10px;">微信</button>
+        <button id="link" class="mdui-btn-block mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-a400" style="width: 250px;height: 50px;margin: auto;margin-top: 10px;" onclick="linkzfb()">一键跳转支付宝</button>
+
+        <script>
+            var wx = document.getElementById('wx');
+            var zfb = document.getElementById('zfb');
+            var wxi = document.getElementById('wxi')
+            var zfbi = document.getElementById('zfbi')
+            wxi.style.display = 'block'
+            wx.onclick = function(){
+                wxi.style.display = 'block'
+                zfbi.style.display = 'none'
+            }
+            zfb.onclick = function(){
+                wxi.style.display = 'none'
+                zfbi.style.display = 'block'
+            }
+            function linkzfb(){
+                window.open("https://qr.alipay.com/fkx18287ajzmcgelfx9l7fb")
+            }
+        </script>
+    </body>
+</html>
